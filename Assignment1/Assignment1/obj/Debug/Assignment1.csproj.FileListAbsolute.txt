@@ -1,9 +1,0 @@
-E:\7thSem\Advance Software engineering\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
-E:\7thSem\Advance Software engineering\Assignment1\Assignment1\obj\Debug\Assignment1.csprojResolveAssemblyReference.cache
-E:\7thSem\Advance Software engineering\Assignment1\Assignment1\obj\Debug\Assignment1.Properties.Resources.resources
-E:\7thSem\Advance Software engineering\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.GenerateResource.Cache
-E:\7thSem\Advance Software engineering\Assignment1\Assignment1\bin\Debug\Assignment1.exe
-E:\7thSem\Advance Software engineering\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
-E:\7thSem\Advance Software engineering\Assignment1\Assignment1\obj\Debug\Assignment1.exe
-E:\7thSem\Advance Software engineering\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
-E:\7thSem\Advance Software engineering\Assignment1\Assignment1\obj\Debug\Assignment1.Fractal.resources
