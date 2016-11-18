@@ -56,7 +56,14 @@ namespace Fractal
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            SaveFileDialog savefile = new SaveFileDialog();
+
+            savefile.Filter = "JPEG | *.jpg";
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                picture.Save(savefile.FileName);
+            }
         }
 
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,7 +79,8 @@ namespace Fractal
 
         private void cloneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            Fractal fb = new Fractal();
+            fb.Show();
         }
 
         private void restartToolStripMenuItem_Click(object sender, EventArgs e)
@@ -88,22 +96,26 @@ namespace Fractal
 
         private void reloadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            mandelbrot();
         }
 
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            //for starting mandelbort again
+            start();
+            mandelbrot();
         }
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            
+            e.Graphics.DrawImage(pictureBox1.Image, 0, 0);
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            PrintDocument printDocument1 = new PrintDocument();
+            printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
+            printDocument1.Print();
         }
 
         public Fractal()
@@ -160,7 +172,7 @@ namespace Fractal
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
 
-            //Console.WriteLine("hello");
+            //Console.WriteLine("sdfdsf");
             update();
         }
 
