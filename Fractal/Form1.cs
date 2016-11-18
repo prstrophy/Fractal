@@ -19,8 +19,8 @@ namespace Fractal
         private const double SY = -1.125; // start value imaginary
         private const double EX = 0.6;    // end value real
         private const double EY = 1.125;  // end value imaginary
-        private static int x1, y1, xs, ys, xe, ye;
-        private static double xstart, ystart, xende, yende, xzoom, yzoom;
+        private static int x1, y1, xs, ys, xe, ye; 
+        private static double xstart, ystart, xende, yende, xzoom, yzoom;// mouse co-ordinates
         private static bool action, rectangle, finished;
         private static float xy;
         private bool mouseDown = false;
@@ -172,7 +172,7 @@ namespace Fractal
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
 
-            //Console.WriteLine("sdfdsf");
+            //Console.WriteLine("Hello");
             update();
         }
 
