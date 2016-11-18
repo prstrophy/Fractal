@@ -46,12 +46,12 @@ namespace Fractal
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          
+            Application.Exit();
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,12 +77,13 @@ namespace Fractal
 
         private void restartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            start();
+            mandelbrot();
         }
 
         private void stopToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            this.pictureBox1.Image = null;
         }
 
         private void reloadToolStripMenuItem_Click(object sender, EventArgs e)
@@ -92,13 +93,12 @@ namespace Fractal
 
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //for starting mandelbort again
            
         }
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-           
+            
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
@@ -160,7 +160,7 @@ namespace Fractal
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
 
-            //Console.WriteLine("sdfdsf");
+            //Console.WriteLine("hello");
             update();
         }
 
